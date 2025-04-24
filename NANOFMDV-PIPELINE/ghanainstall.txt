@@ -1,0 +1,17 @@
+fresh install
+
+sudo apt install curl -y
+sudo apt install wget -y
+sudo apt install git -y
+
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+bash Miniconda3-latest-Linux-x86_64.sh
+
+conda install -c conda-forge mamba
+
+conda env create -f nano_fmdvenvironment.yml
+
+conda activate nanofmdv
+
+pip install biopython scipy numpy pandas medaka
